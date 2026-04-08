@@ -1,0 +1,25 @@
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Environment
+.env
+
+# RAG storage (runtime data)
+rag_storage/
