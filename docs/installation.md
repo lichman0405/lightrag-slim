@@ -5,13 +5,8 @@
 - **Python** ≥ 3.10
 - A POSIX system (Linux / macOS) or Windows with WSL2
 
----
-
-## Install from PyPI
-
-```bash
-pip install lightrag-slim
-```
+!!! info "PyPI release coming soon"
+    `lightrag-slim` is not yet published to PyPI. Please install from source below.
 
 ---
 

@@ -4,71 +4,61 @@ hide:
   - toc
 ---
 
-<div class="hero" markdown>
-
 # lightrag-slim
 
-<div class="hero-subtitle">
-A lightweight, standalone graph-based RAG engine.<br>
-Extracted from the outstanding <strong>LightRAG</strong> — pure Python, zero server dependencies, bring your own LLM.
-</div>
+**A lightweight, standalone graph-based RAG engine** — extracted from [LightRAG](https://github.com/HKUDS/LightRAG).
 
-<div class="hero-badges">
-  <img src="https://img.shields.io/badge/python-%3E%3D3.10-blue?style=flat-square&logo=python" alt="Python">
-  <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
-  <img src="https://img.shields.io/badge/dependencies-8-informational?style=flat-square" alt="Dependencies">
-  <img src="https://img.shields.io/badge/based%20on-LightRAG-blueviolet?style=flat-square" alt="Based on LightRAG">
-</div>
+Pure Python · zero server dependencies · bring your own LLM.
 
-<div class="hero-buttons">
-  <a class="btn btn-primary" href="installation/">Get Started</a>
-  <a class="btn btn-outline" href="quickstart/">Quick Start</a>
-  <a class="btn btn-outline" href="https://github.com/lichman0405/lightrag-slim" target="_blank">GitHub</a>
-</div>
+[![Python](https://img.shields.io/badge/python-%3E%3D3.10-blue?style=flat-square&logo=python)](https://python.org)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/lichman0405/lightrag-slim/blob/main/LICENSE)
+[![Based on LightRAG](https://img.shields.io/badge/based%20on-LightRAG-blueviolet?style=flat-square)](https://github.com/HKUDS/LightRAG)
 
-</div>
+[Get Started](installation.md){ .md-button .md-button--primary }
+[Quick Start](quickstart.md){ .md-button }
+[GitHub :fontawesome-brands-github:](https://github.com/lichman0405/lightrag-slim){ .md-button }
 
 ---
 
 ## Features
 
-<div class="feature-grid" markdown>
+<div class="grid cards" markdown>
 
-<div class="feature-card" markdown>
-<div class="icon">🕸️</div>
-### Graph-Based Retrieval
-Builds a knowledge graph from documents to answer complex multi-hop questions that simple vector search misses.
-</div>
+-   :material-graph-outline:{ .lg .middle } **Graph-Based Retrieval**
 
-<div class="feature-card" markdown>
-<div class="icon">⚡</div>
-### 8 Dependencies Only
-Reduced from 18+ in the full LightRAG. No database server, no vendor SDK required.
-</div>
+    ---
 
-<div class="feature-card" markdown>
-<div class="icon">🔌</div>
-### Bring Your Own LLM
-Plug in any LLM or embedding model — OpenAI, DeepSeek, Anthropic, local Ollama, or anything else.
-</div>
+    Builds a knowledge graph from documents to answer complex multi-hop questions that simple vector search misses.
 
-<div class="feature-card" markdown>
-<div class="icon">📁</div>
-### File-Based Storage
-All data stored as plain files (NetworkX graph + NanoVectorDB + JSON). No infrastructure needed.
-</div>
+-   :material-lightning-bolt:{ .lg .middle } **8 Dependencies**
 
-<div class="feature-card" markdown>
-<div class="icon">🔍</div>
-### 4 Query Modes
-`naive` / `local` / `global` / `hybrid` — from simple vector search to full graph traversal.
-</div>
+    ---
 
-<div class="feature-card" markdown>
-<div class="icon">🐍</div>
-### Pure Async Python
-Built entirely on `asyncio`. Drop into any async Python application or agent framework.
-</div>
+    Reduced from 18+ in full LightRAG. No database server, no vendor SDK required.
+
+-   :material-power-plug-outline:{ .lg .middle } **Bring Your Own LLM**
+
+    ---
+
+    Plug in any LLM or embedding model — OpenAI, DeepSeek, Anthropic, local Ollama, or anything else.
+
+-   :material-folder-outline:{ .lg .middle } **File-Based Storage**
+
+    ---
+
+    All data stored as plain files — NetworkX graph, NanoVectorDB, JSON. No infrastructure needed.
+
+-   :material-magnify:{ .lg .middle } **4 Query Modes**
+
+    ---
+
+    `naive` / `local` / `global` / `hybrid` — from simple vector search to full graph traversal.
+
+-   :material-language-python:{ .lg .middle } **Pure Async Python**
+
+    ---
+
+    Built entirely on `asyncio`. Drop into any Python application or agent framework.
 
 </div>
 
@@ -76,21 +66,20 @@ Built entirely on `asyncio`. Drop into any async Python application or agent fra
 
 ## Acknowledgements
 
-<div class="ack-box" markdown>
+!!! quote "Built on the shoulders of giants"
 
-**This project is built on the shoulders of giants.**
+    `lightrag-slim` is a derivative of [**LightRAG**](https://github.com/HKUDS/LightRAG) — a brilliant graph-based RAG
+    framework developed by researchers at The Hong Kong University of Science and Technology.
+    The core retrieval algorithm, entity/relation extraction pipeline, multi-mode query system,
+    and cross-process shared storage design all originate from their exceptional work.
 
-`lightrag-slim` is a derivative of [**LightRAG**](https://github.com/HKUDS/LightRAG) — a brilliant graph-based RAG framework developed by researchers at The Hong Kong University of Science and Technology. The core retrieval algorithm, entity/relation extraction pipeline, multi-mode query system, and cross-process shared storage design all originate from their exceptional work.
-
-If this library is useful to you, please **[⭐ star and fork the original LightRAG repository](https://github.com/HKUDS/LightRAG)** and consider citing their paper.
-
-</div>
+    If this library is useful to you, please **[⭐ star the original LightRAG repository](https://github.com/HKUDS/LightRAG)** and consider citing their paper.
 
 | Resource | Link |
 |---|---|
-| 📦 Original GitHub | [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) |
-| 📄 Research Paper (arXiv) | [LightRAG: Simple and Fast Retrieval-Augmented Generation](https://arxiv.org/abs/2410.05779) |
-| 👥 Authors | Zirui Guo, Lianghao Xia, Yanhua Yu, Tu Ao, Chao Huang |
+| :fontawesome-brands-github: Original GitHub | [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) |
+| :fontawesome-solid-file-pdf: Research Paper | [arXiv:2410.05779](https://arxiv.org/abs/2410.05779) |
+| :fontawesome-solid-users: Authors | Zirui Guo, Lianghao Xia, Yanhua Yu, Tu Ao, Chao Huang |
 
 ??? note "BibTeX Citation"
     ```bibtex

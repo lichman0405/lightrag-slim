@@ -56,14 +56,10 @@ The result is a library you can embed directly into any Python application or ag
 
 ## Installation
 
-```bash
-pip install lightrag-slim
-```
-
-Or from source:
+> **PyPI release coming soon.** Install from source for now.
 
 ```bash
-git clone https://github.com/your-org/lightrag-slim.git
+git clone https://github.com/lichman0405/lightrag-slim.git
 cd lightrag-slim
 pip install -e .
 ```

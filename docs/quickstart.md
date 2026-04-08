@@ -15,8 +15,10 @@ Choose the tab that matches your LLM and embedding setup.
 
     **Install dependencies**
 
+    First [install lightrag-slim from source](installation.md), then:
+
     ```bash
-    pip install lightrag-slim openai sentence-transformers
+    pip install openai sentence-transformers
     ```
 
     **Set your API key**
@@ -119,8 +121,10 @@ Choose the tab that matches your LLM and embedding setup.
 
     **Install dependencies**
 
+    First [install lightrag-slim from source](installation.md), then:
+
     ```bash
-    pip install lightrag-slim openai
+    pip install openai
     ```
 
     **Set your API key**
