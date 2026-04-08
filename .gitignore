@@ -23,3 +23,6 @@ build/
 
 # RAG storage (runtime data)
 rag_storage/
+
+# MkDocs build output
+site/
