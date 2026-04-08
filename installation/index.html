@@ -443,17 +443,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#install-from-pypi" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install from PyPI
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#install-from-source" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -572,17 +561,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#install-from-pypi" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install from PyPI
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#install-from-source" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -652,28 +630,28 @@
 <li><strong>Python</strong> ≥ 3.10</li>
 <li>A POSIX system (Linux / macOS) or Windows with WSL2</li>
 </ul>
-<hr />
-<h2 id="install-from-pypi">Install from PyPI<a class="headerlink" href="#install-from-pypi" title="Permanent link">&para;</a></h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>lightrag-slim
-</span></code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">PyPI release coming soon</p>
+<p><code>lightrag-slim</code> is not yet published to PyPI. Please install from source below.</p>
+</div>
 <hr />
 <h2 id="install-from-source">Install from Source<a class="headerlink" href="#install-from-source" title="Permanent link">&para;</a></h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/lichman0405/lightrag-slim.git
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">cd</span><span class="w"> </span>lightrag-slim
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/lichman0405/lightrag-slim.git
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>lightrag-slim
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
 </span></code></pre></div>
 <hr />
 <h2 id="verify-the-installation">Verify the Installation<a class="headerlink" href="#verify-the-installation" title="Permanent link">&para;</a></h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;from lightrag_slim import LightRAG, QueryParam; print(&#39;lightrag-slim OK ✓&#39;)&quot;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;from lightrag_slim import LightRAG, QueryParam; print(&#39;lightrag-slim OK ✓&#39;)&quot;</span>
 </span></code></pre></div>
 <p>You should see:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>lightrag-slim OK ✓
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>lightrag-slim OK ✓
 </span></code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">pypinyin warning</p>
 <p>If you see a warning about <code>pypinyin</code> not being installed, that is expected and harmless.
 It only affects Chinese-character sorting in entity names. Install it optionally:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pip<span class="w"> </span>install<span class="w"> </span>pypinyin
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pip<span class="w"> </span>install<span class="w"> </span>pypinyin
 </span></code></pre></div></p>
 </div>
 <hr />
@@ -683,23 +661,23 @@ Install the SDK that matches your choice:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">DeepSeek / OpenAI</label><label for="__tabbed_1_2">Local embedding (BAAI/bge-m3)</label><label for="__tabbed_1_3">OpenAI Embeddings</label><label for="__tabbed_1_4">Anthropic</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pip<span class="w"> </span>install<span class="w"> </span>openai
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pip<span class="w"> </span>install<span class="w"> </span>openai
 </span></code></pre></div>
 <p>Works with any OpenAI-compatible API endpoint (DeepSeek, Together AI, local vLLM, etc.)</p>
 </div>
 <div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>pip<span class="w"> </span>install<span class="w"> </span>sentence-transformers
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pip<span class="w"> </span>install<span class="w"> </span>sentence-transformers
 </span></code></pre></div>
 <p>Downloads and runs the <code>BAAI/bge-m3</code> model locally (1 GB, CPU-compatible).
 No API key needed.</p>
 </div>
 <div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>pip<span class="w"> </span>install<span class="w"> </span>openai
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>pip<span class="w"> </span>install<span class="w"> </span>openai
 </span></code></pre></div>
 <p>Use <code>text-embedding-3-small</code> or <code>text-embedding-3-large</code> via the OpenAI API.</p>
 </div>
 <div class="tabbed-block">
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>pip<span class="w"> </span>install<span class="w"> </span>anthropic
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>pip<span class="w"> </span>install<span class="w"> </span>anthropic
 </span></code></pre></div>
 <p>Use Claude models for the LLM function.</p>
 </div>
